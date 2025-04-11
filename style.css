@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 100%;
-    margin: 0px auto;
-    max-width: 1140px;  }
-
-
 body {
     font-family: "Inter", sans-serif;
     color: #303030;
+    min-width: 375px; /* Установлено минимальное значение ширины для body */
+}
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1140px;
 }
 
 header {
@@ -56,7 +56,7 @@ header span {
 }
 
 .main-image {
-    max-width: 715px;
+    max-width: 715px; /* Убедитесь, что это значение корректно */
 }
 
 .about-section {
@@ -75,205 +75,150 @@ select {
     border-radius: 5px;
     width: 150px;
     padding: 8px 12px;
-    font-weight: 400;
-    font-size: 16px;
-    appearance: none;
-    background-image: url("image2.png");
-    background-repeat: no-repeat;
-    background-position: right 12px top 50%;
 }
 
 select:hover,
 .text-field:hover {
-    border-color: #688de3;
+   border-color: #688de3;
 }
 
 .info-wrapper {
-    display: flex;
+   display:flex;
+   gap:20px; /* Добавлено для отступа между элементами */
 }
 
 .section-title {
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 25px;
+   font-weight:bold;
+   font-size :24 px ;
+   margin-bottom :25 px ;
 }
 
 .frameworks,
 .books {
-    min-width: 50%;
+   min-width :50 % ;
 }
 
 .frameworks-list,
 .books-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.frameworks-list {
-    font-weight: 400;
-    font-size: 16px;
-    list-style-image: url(image2.png );
-    padding-left: 20px;
+   display:flex;
+   flex-direction :column ;
+   gap :16 px ;
 }
 
 .skills-block {
-    display: flex;
-    flex-direction: column-reverse;
+   display:flex;
+   flex-direction :column-reverse ;
 }
 
 .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.books-list {
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 20px;
+   display:flex;
+   flex-direction :column ;
+   gap :20 px ;
 }
 
 .label {
-    font-weight: 400;
-    font-size: 16px;
+   font-weight :400 ;
+   font-size :16 px ;
 }
 
 form {
-    margin-bottom: 40px;
-
+   margin-bottom :40 px ;
+   display:flex; /* Убедитесь, что форма использует flexbox */
+   align-items:center; /* Центрирование элементов формы */
+   gap :10 px ; /* Установлен отступ между элементами формы */
 }
 
 .text-field {
-    border: 1px solid rgba(48, 48, 48, 0.3);
-    border-radius: 5px;
-    max-width: 330px;
-    width: 100%;
-    height: 36px;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 8px 12px;
-    font-weight: 400;
-    font-size: 16px;
+   border :1 px solid rgba(48,48,48,0.3);
+   border-radius :5 px ;
+   max-width :330 px ;
+   width :100 % ;
 }
 
 .btn {
-    border: none;
-    border-radius: 5px;
-    min-width: 125px;
-    height: 36px;
-    background-color: #2965f1;
-    font-weight: 700;
-    font-size: 14px;
-    color: #fff;
+   border:none;
+   border-radius :5 px ;
+   min-width :125 px ;
 }
 
 .btn:hover {
-    background-color: rgba(41, 101, 241, 0.9);
-    cursor: pointer;
+   cursor:pointer;
 }
 
 .line {
-    margin: 60px 0;
+   margin :60 px auto;
 }
 
 table {
-    border: 1px solid #95a1bb;
-    border-collapse: collapse;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 0 auto;
+   border-collapse :collapse;
 }
 
 th, td {
-    padding: 12px 15px;
+   padding :12 px 15 px ;
 }
 
 footer {
-    background-color: rgba(163, 167, 255, 0.3);
-    padding: 26px 0;
-    text-align: center;
+   background-color :rgba(163,167,255,0.3);
 }
 
 .footer-link {
-    font-weight: 400;
-    font-size: 14px;
-    color: #2965f1;
-    text-decoration: none;
-}
+     color:#2965f1;
+     text-decoration:none;
+ }
 
 .footer-link:hover {
-    text-decoration: underline;
-}
-@media screen and (max-width: 1200px) {
-    .container {
-        padding: 0 20px;
-    }
+     text-decoration:inline-underline;
+ }
 
-    .main-section {
-        min-height: 375px;
-        padding-bottom: 100px;
-    }
+@media screen and (max-width :1200 px) {
+     .container {
+         padding :0 20 px ;
+     }
 
-    .main-section .wrapper {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-        gap: 60px;
-    }
+     .main-section {
+         min-height :375 px ;
+         padding-bottom :100 px ;
+     }
 
-    .main-image {
-        max-width: 100%;
-    }
+     .main-section .wrapper {
+         flex-direction :column-reverse;
+         align-items:flex-start;
+         gap :60 px ;
+     }
 
-    .text-wrapper {
-        max-width: 560px;
-    }
+     .main-image {
+         max-width :100 % ;
+     }
 
-    .about-section {
-        padding: 60px 0px;
-    }
+     .text-wrapper {
+         max-width :560 px ;
+     }
 
-    .about-section .wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 60px 0px;
-    }
-}
+     .about-section .wrapper {
+         gap :30 px ;
+         padding-top :60 px ;
+         padding-bottom :60 px ;
+     }
+ }
 
-@media screen and (max-width: 576px) {
-    body {
-        min-width: 375px;
-    }
-
-    .main-section {
-        padding: 30px 0px 60px;
-    }
-
-    .main-section .wrapper {
-        gap: 40px;
-    }
-
-    .main-title {
-        font-size: 36px;
-    }
-
-    .about-section .wrapper,
-    .info-wrapper {
-        gap: 50px;
-    }
-
-    form {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .text-field,
-    .btn {
-        flex-grow: 1;
-    }
-
-    .btn {
-        min-width: auto;
-    }
+@media screen and (max-width :576 px) {
+      body{
+          min-width:auto ;
+      }
+      .main-section{
+          padding-top:auto ;
+          padding-bottom:auto ;
+      }
+      .main-title{
+          font-size:auto ;
+      }
+      form{
+          display:flex ;
+          align-items:center ;
+          gap:auto ;
+      }
+      .text-field,
+      .btn{
+          flex-grow:auto ;
+      }
 }
