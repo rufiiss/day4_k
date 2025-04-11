@@ -210,7 +210,7 @@ footer {
     }
 
     .main-section {
-        min-height: auto;
+        min-height: 375px;
         padding-bottom: 100px;
     }
 
@@ -250,7 +250,7 @@ footer {
     }
 
     .main-section .wrapper {
-        gap: 15px;
+        gap: 40px;
     }
 
     .main-title {
