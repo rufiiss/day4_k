@@ -3,23 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     width: 100%;
-    margin: 0px auto;
-    max-width: 1140px;  }
-
+    margin: 0 auto;
+    max-width: 1140px;
+}
 
 body {
-    font-family: "Inter", sans-serif;
-    color: #303030;
+    body {
+        font-family: "Inter", sans-serif;
+        color: #303030;
+    }
 
-}
-
-header {
-    background-color: #1556ee;
-    padding: 23px 0;
-}
+    header {
+        background-color: #1556ee;
+        padding: 23px 0;
+    }
 
 header span {
     font-weight: 700;
@@ -29,13 +28,11 @@ header span {
 
 .main-section {
     background-color: #fafaff;
-    padding: 60px 0px;
-    padding-bottom: 100px;
+    padding: 60px 0;
     min-height: 100vh;
     display: flex;
     align-items: center;
 }
-
 .main-section .wrapper {
     display: flex;
     align-items: center;
