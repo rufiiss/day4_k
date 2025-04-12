@@ -29,7 +29,8 @@ header span {
 
 .main-section {
     background-color: #fafaff;
-    padding: 60px 0;
+    padding: 60px 0px;
+    padding-bottom: 100px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@ header span {
 }
 
 .text-wrapper {
-    max-width: 425px;
+    max-width: 560px;
 }
 
 .main-title {
@@ -61,7 +62,7 @@ header span {
 
 .about-section {
     background-color: #fff;
-    padding: 100px 0;
+    padding: 60px 0px;
 }
 
 .about-section .wrapper {
@@ -90,6 +91,8 @@ select:hover,
 
 .info-wrapper {
     display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .section-title {
@@ -207,11 +210,11 @@ footer {
 
 @media screen and (max-width: 1200px) {
     .container {
-        padding: 20px;
+        padding: 0px 20px;
     }
 
     .main-section {
-        min-height: 768px;
+        min-width: 768px;
         padding-bottom: 100px;
     }
 
@@ -233,6 +236,9 @@ footer {
         gap: 30px;
         padding-top: 60px;
     }
+    form{
+        gap: 10px ;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -241,21 +247,28 @@ footer {
       }
       .main-section{
           padding-top: 10px ;
-          padding-bottom: 10px ;
+          padding-bottom: 100px ;
+          padding: 30px 0px 60px;
       }
       .main-title{
-          font-size:auto ;
+          font-size: 36px ;
       }
       form{
           display:flex ;
           flex-direction: row;
           gap: 10px ;
       }
+      .main-image {
+        max-width: 100%;
+    }
       .text-field,
       .btn{
           flex-grow:auto ;
       }
       .main-section .wrapper {
-        gap :10 px ;
+        gap : 50 px ;
+    }
+    .info-wrapper {
+        gap: 50px;
     }
 }
